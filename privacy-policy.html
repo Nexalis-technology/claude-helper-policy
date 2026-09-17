@@ -1,0 +1,412 @@
+<title>Continuity Privacy Policy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap"
+  rel="stylesheet"
+/>
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --surface: #f1f6f5;
+    --surface-border: #dfe6e4;
+    --text: #17211f;
+    --subtext: #55655f;
+    --accent: #0d7d72;
+    --accent-soft: #e2f2ef;
+    --rule: #dfe6e4;
+    --mono-chip-bg: #eef2f0;
+    --mono-chip-text: #1c3a34;
+
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101614;
+      --surface: #161f1c;
+      --surface-border: #26322e;
+      --text: #eef3f1;
+      --subtext: #9db0ab;
+      --accent: #3fd1bf;
+      --accent-soft: #16302b;
+      --rule: #26322e;
+      --mono-chip-bg: #1b2622;
+      --mono-chip-text: #a8ece1;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #101614;
+    --surface: #161f1c;
+    --surface-border: #26322e;
+    --text: #eef3f1;
+    --subtext: #9db0ab;
+    --accent: #3fd1bf;
+    --accent-soft: #16302b;
+    --rule: #26322e;
+    --mono-chip-bg: #1b2622;
+    --mono-chip-text: #a8ece1;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Public Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-inline: 20px;
+    padding-block: 56px 80px;
+  }
+
+  header.doc-head {
+    margin-bottom: 40px;
+  }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 14px;
+  }
+
+  h1 {
+    font-family: "Newsreader", Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(2rem, 4.5vw, 2.75rem);
+    line-height: 1.12;
+    margin: 0 0 12px;
+    text-wrap: balance;
+  }
+
+  .doc-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    color: var(--subtext);
+    font-size: 14px;
+  }
+
+  .doc-meta span {
+    white-space: nowrap;
+  }
+
+  .summary-card {
+    background: var(--surface);
+    border: 1px solid var(--surface-border);
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin: 32px 0 44px;
+  }
+
+  .summary-card h2 {
+    font-family: "Newsreader", Georgia, serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0 0 12px;
+  }
+
+  .summary-list {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .summary-list li {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    font-size: 15px;
+  }
+
+  .summary-list li::before {
+    content: "—";
+    color: var(--accent);
+    flex: none;
+  }
+
+  section.doc-section {
+    margin-block: 40px;
+  }
+
+  section.doc-section:first-of-type {
+    margin-top: 0;
+  }
+
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  .section-num {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    color: var(--subtext);
+  }
+
+  h2.section-title {
+    font-family: "Newsreader", Georgia, serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  h3 {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 24px 0 8px;
+  }
+
+  p {
+    margin: 0 0 14px;
+    max-width: 65ch;
+  }
+
+  .rule {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 40px 0;
+  }
+
+  code.chip {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.85em;
+    background: var(--mono-chip-bg);
+    color: var(--mono-chip-text);
+    padding: 0.15em 0.45em;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+
+  table.permissions {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 8px;
+    font-size: 14.5px;
+  }
+
+  table.permissions caption {
+    text-align: left;
+    font-size: 13px;
+    color: var(--subtext);
+    margin-bottom: 8px;
+  }
+
+  table.permissions th {
+    text-align: left;
+    font-weight: 700;
+    color: var(--subtext);
+    font-size: 12.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0 12px 10px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  table.permissions td {
+    padding: 12px 12px 12px 0;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+
+  table.permissions tr:last-child td {
+    border-bottom: none;
+  }
+
+  .no-list {
+    display: grid;
+    gap: 8px;
+    margin: 16px 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .no-list li {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+  }
+
+  .no-list li::before {
+    content: "✕";
+    color: var(--subtext);
+    flex: none;
+    font-size: 0.85em;
+    margin-top: 0.25em;
+  }
+
+  footer.doc-foot {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    color: var(--subtext);
+    font-size: 13.5px;
+  }
+
+  footer.doc-foot p {
+    max-width: none;
+  }
+
+  @media (max-width: 480px) {
+    .page {
+      padding-block: 40px 56px;
+    }
+  }
+</style>
+
+<div class="page">
+  <header class="doc-head">
+    <p class="eyebrow">Privacy Policy</p>
+    <h1>Continuity for Claude.ai</h1>
+    <div class="doc-meta">
+      <span>Effective 2026-09-17</span>
+      <span>Version 0.1.0</span>
+      <span>Not affiliated with Anthropic</span>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>In plain terms</h2>
+    <ul class="summary-list">
+      <li>Everything this extension stores lives in your own browser's local storage — nothing is sent to a server we operate, because we don't operate one.</li>
+      <li>The only network request it makes on its own is a direct, same-origin call to Claude.ai's own usage endpoint, using your existing logged-in session.</li>
+      <li>Conversation text is read only from the claude.ai tab you're on, only to build an export, a fork, or a continuity brief you asked for — and only when you click a button.</li>
+      <li>Clipboard writes and file downloads happen only when you click the specific button that does them.</li>
+    </ul>
+  </div>
+
+  <section class="doc-section">
+    <div class="section-head">
+      <span class="section-num">§1</span>
+      <h2 class="section-title">What this extension is</h2>
+    </div>
+    <p>
+      Continuity is a browser extension that adds usage tracking, conversation export, conversation forking, a
+      prompt library, and a cross-AI continuity panel to <code class="chip">claude.ai</code>. It is built and
+      maintained independently and has no relationship with Anthropic, PBC beyond running inside a browser tab
+      pointed at their product.
+    </p>
+  </section>
+
+  <section class="doc-section">
+    <div class="section-head">
+      <span class="section-num">§2</span>
+      <h2 class="section-title">Data we store, and where</h2>
+    </div>
+    <p>
+      All extension data — your saved prompts, export/fork history metadata, and feature settings — is written to
+      <code class="chip">chrome.storage.local</code>, a storage area Chrome keeps on your own device, scoped to
+      this extension. It is never transmitted anywhere by us, because the extension has no backend server of any
+      kind.
+    </p>
+    <h3>What's kept, specifically</h3>
+    <p>
+      Saved prompt text you add yourself; lightweight metadata about past exports and forks (title, format,
+      timestamp — not the full conversation text); your feature on/off toggles; and the last usage percentage the
+      extension observed. Full conversation content is read at the moment you use export, fork, or continuity, and
+      handed directly to your download or clipboard — it is not retained afterward.
+    </p>
+  </section>
+
+  <section class="doc-section">
+    <div class="section-head">
+      <span class="section-num">§3</span>
+      <h2 class="section-title">The one network request we make</h2>
+    </div>
+    <p>
+      To show your Claude usage percentage, the extension calls <code class="chip">/api/organizations/&#123;orgId&#125;/usage</code>
+      — an endpoint that belongs to Claude.ai itself, not to us. Because the request is same-origin, your browser
+      attaches your existing claude.ai session cookies automatically; the extension never sees, stores, or handles
+      any password, token, or credential. This is the only outbound request the extension initiates on its own,
+      and its response (a usage percentage and reset time) is used only to render the on-page badge.
+    </p>
+  </section>
+
+  <section class="doc-section">
+    <div class="section-head">
+      <span class="section-num">§4</span>
+      <h2 class="section-title">Permissions, and why each is needed</h2>
+    </div>
+    <table class="permissions">
+      <caption>As declared in the extension's manifest</caption>
+      <thead>
+        <tr>
+          <th>Permission</th>
+          <th>Why it's requested</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code class="chip">storage</code></td>
+          <td>Save your prompts, settings, and history metadata locally, as described in §2.</td>
+        </tr>
+        <tr>
+          <td><code class="chip">downloads</code></td>
+          <td>Save an export or continuity brief as a file on your device when you click Download.</td>
+        </tr>
+        <tr>
+          <td><code class="chip">host_permissions</code>: claude.ai</td>
+          <td>Read the visible conversation and composer on claude.ai to power export, forking, the prompt library,
+            and the token counter — and to make the same-origin usage request in §3.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="doc-section">
+    <div class="section-head">
+      <span class="section-num">§5</span>
+      <h2 class="section-title">What we don't do</h2>
+    </div>
+    <ul class="no-list">
+      <li>We don't run analytics, telemetry, or crash reporting of any kind.</li>
+      <li>We don't sell, rent, or share your data — there is no data on any server of ours to share.</li>
+      <li>We don't read or act on any page other than claude.ai.</li>
+      <li>We don't auto-send anything to ChatGPT, Gemini, or any other destination — continuity briefs are copied
+        to your clipboard and a blank tab is opened for you to paste into yourself.</li>
+      <li>We don't inject ads or modify the content Claude.ai serves you, beyond adding our own UI elements.</li>
+    </ul>
+  </section>
+
+  <hr class="rule" />
+
+  <section class="doc-section">
+    <div class="section-head">
+      <span class="section-num">§6</span>
+      <h2 class="section-title">Changes to this policy</h2>
+    </div>
+    <p>
+      If what the extension collects or requests changes in a future version, this page will be updated and the
+      version number above will change accordingly.
+    </p>
+  </section>
+
+  <footer class="doc-foot">
+    <p>Questions about this policy or the extension's data handling can be raised via the extension's Chrome Web
+      Store listing.</p>
+  </footer>
+</div>
